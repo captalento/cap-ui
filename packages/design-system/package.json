@@ -1,0 +1,30 @@
+{
+  "name": "@captalento/design-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/atoms/index.ts",
+  "types": "./src/atoms/index.ts",
+  "scripts": {
+    "build": "vite build",
+    "lint": "eslint *.ts*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@captalento/design-tokens": "workspace:^1.0.0",
+    "@vanilla-extract/css": "^1.9.5",
+    "@vitejs/plugin-react": "^3.1.0",
+    "vite": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vanilla-extract/vite-plugin": "^3.8.0",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "react": "^18.2.0",
+    "typescript": "^4.5.2"
+  }
+}
