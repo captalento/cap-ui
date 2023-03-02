@@ -1,2 +1,2 @@
 import { style } from '@vanilla-extract/css';
-export const buttonClass = style({ display: 'flex' })
+export const buttonClass = style({ display: 'block' })
