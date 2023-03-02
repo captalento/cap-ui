@@ -1,10 +1,11 @@
-import { Button } from "ui";
+import { Text, Button, containerStyles } from '@captalento/design-system'
 
 export default function Blog() {
   return (
-    <div>
+    <section className={containerStyles}>
       <h1>Blog</h1>
-      <Button />
-    </div>
+      <Text>Text Element</Text>
+      <Button>click here</Button>
+    </section>
   );
 }

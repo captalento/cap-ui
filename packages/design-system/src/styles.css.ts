@@ -1,4 +1,4 @@
-import { createTheme, style } from '@vanilla-extract/css';
+import { createTheme, style, createGlobalThemeContract } from '@vanilla-extract/css';
 import { colors } from '@captalento/design-tokens'
 
 const [themeClass, vars] = createTheme({
@@ -10,5 +10,8 @@ const [themeClass, vars] = createTheme({
 });
 
 export const containerStyles = style({
-  backgroundColor: vars.color.blue[100]
+  // backgroundColor: vars.color.red[100]// does not working
+  backgroundColor: '#22262B',
+  color: '#EDEFF9'
 });
+
