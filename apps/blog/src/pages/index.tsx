@@ -1,10 +1,12 @@
-import { Text, Button, containerStyles } from '@captalento/design-system'
+import {Button, Text, Heading } from '@captalento/design-system';
+import '@captalento/design-system/dist/index.css'
 
 export default function Blog() {
   return (
-    <section className={containerStyles}>
-      <h1>Blog</h1>
-      <Text>Text Element</Text>
+    <section>
+      <Heading>Blog</Heading>
+      {/* <List></List> */}
+      <Text>Lorem ipsum dolor sit amet i? Deserunt hic incidunt id temporibus animi.</Text>
       <Button>click here</Button>
     </section>
   );
