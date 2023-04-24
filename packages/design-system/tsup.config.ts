@@ -23,6 +23,7 @@ export default defineConfig({
   sourcemap: false,
   format: "esm",
   clean: true,
+  // external: ["react"],
   dts: true,
   esbuildPlugins: [vanillaExtractPlugin({
     processCss

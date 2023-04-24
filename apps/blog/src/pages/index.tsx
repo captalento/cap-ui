@@ -1,4 +1,5 @@
-import { Button, Text, Heading } from '@captalento/design-system';
+import {Button, Text, Heading } from '@captalento/design-system';
+import '@captalento/design-system/dist/index.css'
 
 export default function Blog() {
   return (
