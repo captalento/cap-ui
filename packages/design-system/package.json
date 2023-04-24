@@ -2,13 +2,22 @@
   "name": "@captalento/design-system",
   "version": "1.0.0",
   "description": "Provider components to any ui captalento project",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "typings": "src/index.ts",
   "type": "module",
   "scripts": {
     "lint": "eslint *.ts*",
     "build": "rm -rf dist && tsup"
   },
+  "exports": {
+    ".": {
+      "import": "./src/atoms/index.ts"
+    }
+  },
+  "files": [
+    "src"
+  ],
   "keywords": [],
   "author": "Isaias Mendes",
   "license": "ISC",
