@@ -1,2 +1,3 @@
 import { style } from '@vanilla-extract/css';
-export const headingClass = style({ color: 'blue',	fontSize: "40px",})
+import { vars } from '../../styles/theme.css'
+export const headingClass = style({ color: vars.colors.primary,	fontSize: "40px"})

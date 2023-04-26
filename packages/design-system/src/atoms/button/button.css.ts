@@ -1,2 +1,2 @@
 import { style } from '@vanilla-extract/css';
-export const buttonClass = style({ display: 'block', fontSize: 'x-large', margin: '40px' })
+export const buttonClass = style({ display: 'block', padding: '1rem' })

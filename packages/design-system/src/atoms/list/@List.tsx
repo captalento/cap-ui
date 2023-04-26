@@ -1,6 +1,6 @@
 import { HTMLAttributes } from "react";
 
-// import * as style  from './text.css';
+// import * as styles  from './text.css';
 export type ListProps = HTMLAttributes<HTMLUListElement>;
 
 export function List({ children, ...props }: ListProps) {

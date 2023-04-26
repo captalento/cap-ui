@@ -1,10 +1,11 @@
 import { HTMLAttributes } from "react";
 
-import * as style  from './text.css';
+import * as styles from './text.css';
+import clsx from "clsx";
 export type TextProps = HTMLAttributes<HTMLParagraphElement>;
 
 export function Text({ children, ...props }: TextProps) {
   return (
-    <p {...props} className={style.textClass}>{children}</p>
+    <p {...props} className={clsx(styles.root)}>{children}</p>
   )
 }
