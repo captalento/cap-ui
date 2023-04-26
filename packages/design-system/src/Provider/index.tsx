@@ -1,15 +1,23 @@
-import {useState, ReactNode} from 'react';
+import { ReactNode } from 'react';
+import clsx from 'clsx';
+
 import '../styles/global.css';
 import { darkTheme, lightTheme } from "../styles/theme.css";
 
-export function DSProvider({ children }: {children: ReactNode}) {
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+export interface DSProviderProps {
+  children: ReactNode;
+  theme?: 'dark' | 'light';
+}
+
+export function DSProvider({ children, theme = 'dark' }: DSProviderProps) {
+  const themeClass = clsx({
+    [darkTheme]: theme === 'dark',
+    [lightTheme]: theme === 'light',
+  });
+
   return (
-    <div id='app' className={isDarkTheme ? darkTheme : lightTheme}>
+    <div id='app' className={themeClass}>
       {children}
-      <button onClick={() => setIsDarkTheme((currentValue) => !currentValue)}>
-        Switch to {isDarkTheme ? "light" : "dark"} theme
-      </button>
     </div>
   )
 }
