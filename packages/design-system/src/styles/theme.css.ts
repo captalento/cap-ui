@@ -1,9 +1,9 @@
 import {
-  createGlobalTheme,
   createTheme,
-  createThemeContract
+  createGlobalTheme,
+  createThemeContract,
 } from "@vanilla-extract/css";
-import { colors } from '@captalento/design-tokens'
+import { colors, fontSizes } from '@captalento/design-tokens'
 
 const root = createGlobalTheme("#app", {
   space: {
@@ -16,9 +16,9 @@ const root = createGlobalTheme("#app", {
     body: "Montserrat"
   },
   fontSizes: {
-    small: "16px",
-    medium: "20px",
-    large: "36px"
+    small: fontSizes.sm,
+    medium: fontSizes.md,
+    large: fontSizes.lg,
   },
   lineHeights: {
     small: "24px",
@@ -27,7 +27,7 @@ const root = createGlobalTheme("#app", {
   }
 });
 
-const colorsContract = createThemeContract({
+const themeContract = createThemeContract({
   primary: null,
   secondary: null,
   background: null,
@@ -37,7 +37,7 @@ const colorsContract = createThemeContract({
   }
 });
 
-export const lightTheme = createTheme(colorsContract, {
+export const lightTheme = createTheme(themeContract, {
   primary: colors.blue.blue100,
   secondary: colors.black.black100,
   background: colors.white.white100,
@@ -47,7 +47,7 @@ export const lightTheme = createTheme(colorsContract, {
   }
 });
 
-export const darkTheme = createTheme(colorsContract, {
+export const darkTheme = createTheme(themeContract, {
   primary: colors.blue.blue100,
   secondary: colors.white.white100,
   background: colors.black.black200,
@@ -57,4 +57,4 @@ export const darkTheme = createTheme(colorsContract, {
   }
 });
 
-export const vars = { ...root, colors: colorsContract };
+export const vars = { ...root, theme: themeContract };
