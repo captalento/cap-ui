@@ -1,13 +1,12 @@
-import {Button, Text, Heading } from '@captalento/design-system';
-// import '@captalento/design-system/dist/index.css'
+import {Button, Text, Heading , DSProvider} from '@captalento/design-system';
 
 export default function Blog() {
   return (
-    <section>
-      <Heading>Blog</Heading>
-      {/* <List></List> */}
-      <Text>Lorem ipsum dolor sit amet i? Deserunt hic incidunt id temporibus animi.</Text>
-      <Button>click here</Button>
-    </section>
+    <DSProvider>
+      <section>
+        <Heading>Blog</Heading>
+        <Text>Todos as descrições das pessoas são sobre a humanidade do atendimento.</Text>
+      </section>
+    </DSProvider>
   );
 }

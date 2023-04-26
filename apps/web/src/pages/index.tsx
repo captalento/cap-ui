@@ -1,10 +1,17 @@
-import { Button } from "ui";
+import { Text, Heading, DSProvider, Card } from '@captalento/design-system';
 
-export default function Web() {
+export default function Home() {
   return (
-    <div>
-      <h1>Web</h1>
-      <Button />
-    </div>
+    <DSProvider>
+      <section>
+        <Heading>Captalento</Heading>
+        <Text>Conteudo sobre Programação!</Text>
+        <Text>Design Pattern</Text>
+        <Text>DDD</Text>
+        <Card>Youtube</Card>
+        <Card>Instagram</Card>
+        <Card>Blog</Card>
+      </section>
+    </DSProvider>
   );
 }
