@@ -1,8 +1,5 @@
 import { globalStyle, globalFontFace } from '@vanilla-extract/css';
-
-
 import { vars } from './theme.css';
-
 
 globalStyle('*', {
   boxSizing: 'border-box',
@@ -27,7 +24,7 @@ globalFontFace(fontFamily, {
 globalStyle('#app', {
   padding: vars.space.large,
   fontFamily: fontFamily,
-  background: vars.colors.background,
-  color: vars.colors.text.normal,
+  background: vars.theme.background,
+  color: vars.theme.text.normal,
   minHeight: '100vh'
 });

@@ -1,11 +1,15 @@
-import { HTMLAttributes } from "react";
-
+import { HTMLAttributes } from 'react';
+import clsx from 'clsx';
 import * as styles from './text.css';
-import clsx from "clsx";
-export type TextProps = HTMLAttributes<HTMLParagraphElement>;
 
-export function Text({ children, ...props }: TextProps) {
+export type TextProps = HTMLAttributes<HTMLParagraphElement> & {
+  size?: 'sm' | 'md' | 'lg';
+};
+
+export function Text({ children, size = 'md', ...rest }: TextProps) {
+  const textSize = styles[size];
+
   return (
-    <p {...props} className={clsx(styles.root)}>{children}</p>
+    <p className={clsx(styles.root, textSize)} {...rest} >{children}</p>
   )
 }

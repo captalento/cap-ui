@@ -7,7 +7,9 @@ export default function Home() {
       <section>
         <Heading>Captalento</Heading>
         <Text>Conteudo sobre Programação!</Text>
-        <Text>Design Pattern</Text>
+        <Text size='sm'>Design Pattern</Text>
+        <Text size='md'>DDD</Text>
+        <Text size='lg'>large</Text>
         <Text>DDD</Text>
         <Card>Youtube</Card>
         <Card>Instagram</Card>
