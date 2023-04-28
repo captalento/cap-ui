@@ -6,7 +6,7 @@
 
 ### components
 [] Heading
-[] Text
+[x] Text
 [] Button
 [] Card
 [] Input
