@@ -3,6 +3,7 @@ import { vars } from './theme.css';
 
 globalStyle('*', {
   boxSizing: 'border-box',
+  margin: 0,
 });
 
 globalStyle('body', {
@@ -22,7 +23,6 @@ globalFontFace(fontFamily, {
 })
 
 globalStyle('#app', {
-  padding: vars.space.large,
   fontFamily: fontFamily,
   background: vars.theme.background,
   color: vars.theme.text.normal,
