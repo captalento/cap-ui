@@ -6,6 +6,17 @@ import {
 import { colors, fontSizes } from '@captalento/design-tokens'
 
 const root = createGlobalTheme("#app", {
+  colors: {
+    blue: { ...colors.blue },
+    white: { ...colors.white },
+    black: { ...colors.black },
+    red: { ...colors.red },
+    gray: { ...colors.gray },
+    orange: { ...colors.orange },
+    yellow: { ...colors.yellow },
+    purple: { ...colors.purple },
+    green: { ...colors.green },
+  },
   space: {
     small: "4px",
     medium: "8px",
