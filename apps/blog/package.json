@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@captalento/design-system": "workspace:*",
+    "@vanilla-extract/css": "^1.9.5",
     "contentful": "^10.1.3",
     "next": "^13.1.1",
     "react": "18.2.0",
