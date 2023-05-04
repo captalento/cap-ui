@@ -1,11 +1,10 @@
-import { DSProvider } from '@captalento/design-system';
+import { Layout } from '../components/Layout';
 import { AppProps } from 'next/app';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <DSProvider>
-      {/* add layout here */}
+    <Layout>
       <Component {...pageProps} />
-    </DSProvider>
+    </Layout>
   )
 }

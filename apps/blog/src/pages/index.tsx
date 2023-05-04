@@ -1,15 +1,20 @@
-import { Text, Heading , DSProvider} from '@captalento/design-system';
+import { Heading } from '@captalento/design-system';
 import { getPosts } from '../datalayer'
 import Card from '../components/Card';
 
+import * as styles  from './styles.css'
+
 export default function Blog({ posts }: any) {
   return (
-    <section>
-      <Heading>Blog</Heading>
-      <Text>Todos as descrições das pessoas são sobre a humanidade do atendimento.</Text>
-      {posts.map((post: any) => (
-        <Card key={post.sys.id} fields={post.fields} />
-      ))}
+    <section className={styles.sectionClass}>
+
+      <Heading size='md' color='green'>Blog</Heading>
+      
+      <section className={styles.cardsClass}>
+        {posts.map((post: any) => (
+          <Card key={post.sys.id} fields={post.fields} />
+        ))}
+      </section>
     </section>
   );
 }
