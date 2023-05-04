@@ -21,6 +21,7 @@ importers:
       '@types/react-dom': ^18.0.7
       '@vanilla-extract/css': ^1.9.5
       '@vanilla-extract/next-plugin': ^2.1.1
+      clsx: ^1.2.1
       contentful: ^10.1.3
       eslint: 7.32.0
       eslint-config-custom: workspace:*
@@ -32,6 +33,7 @@ importers:
     dependencies:
       '@captalento/design-system': link:../../packages/design-system
       '@vanilla-extract/css': 1.9.5
+      clsx: 1.2.1
       contentful: 10.1.3
       next: 13.1.6_pjwopsidmaokadturxaafygjp4
       react: 18.2.0
@@ -1178,7 +1180,6 @@ packages:
   /clsx/1.2.1:
     resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
     engines: {node: '>=6'}
-    dev: true
 
   /color-convert/1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
