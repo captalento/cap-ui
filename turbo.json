@@ -6,6 +6,15 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**", ".next/**"]
     },
+    "blog#build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**"],
+      "env": [
+        "CONTENTFUL_ACCESS_TOKEN",
+        "CONTENTFUL_ENVIRONMENT",
+        "CONTENTFUL_SPACE"
+      ]
+    },
     "lint": {
       "outputs": []
     },
