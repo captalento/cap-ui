@@ -35,7 +35,10 @@ const root = createGlobalTheme("#app", {
     small: "24px",
     medium: "28px",
     large: "40px"
-  }
+  },
+  gridRepeat: {
+    "4x": "repeat(4, 1fr)",
+  },
 });
 
 const themeContract = createThemeContract({
