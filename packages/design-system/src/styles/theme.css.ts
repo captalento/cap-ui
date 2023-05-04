@@ -5,7 +5,7 @@ import {
 } from "@vanilla-extract/css";
 import { colors, fontSizes } from '@captalento/design-tokens'
 
-const root = createGlobalTheme("#app", {
+const root = createGlobalTheme(":root", {
   colors: {
     blue: { ...colors.blue },
     white: { ...colors.white },
