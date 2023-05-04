@@ -2,7 +2,7 @@ import { Heading } from '@captalento/design-system';
 import { getPosts } from '../datalayer'
 import Card from '../components/Card';
 
-import * as styles  from './styles.css'
+import * as styles  from '../styles/styles.css'
 
 export default function Blog({ posts }: any) {
   return (
