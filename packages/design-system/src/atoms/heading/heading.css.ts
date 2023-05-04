@@ -2,7 +2,6 @@ import { style } from '@vanilla-extract/css';
 import { vars } from '../../styles/theme.css'
 export const headingClass = style({ color: vars.theme.primary,	fontSize: "40px"})
 
-
 export const primaryClass = style({
   color: vars.theme.primary,
 });
@@ -20,7 +19,7 @@ export const yellowClass = style({
 export const orangeClass = style({
   color: vars.colors.orange.orange100,
 });
-export const greenClass = style({
+export const greenClass = style({ 
   color: vars.colors.green.green100,
 });
 export const redClass = style({
