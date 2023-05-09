@@ -4,11 +4,9 @@ import { vars } from './theme.css';
 globalStyle('*', {
   boxSizing: 'border-box',
   margin: 0,
+  padding: 0
 });
 
-globalStyle('body', {
-  margin: 0,
-});
 
 const fontFamily = 'Montserrat'
 globalFontFace(fontFamily, {
