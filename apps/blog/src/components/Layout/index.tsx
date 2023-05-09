@@ -1,4 +1,4 @@
-import { DSProvider, Header } from '@captalento/design-system';
+import { Header, DSProvider, sprinkles } from '@captalento/design-system';
 import Image from 'next/image';
 
 interface LayoutProps {
@@ -8,7 +8,9 @@ import * as styles  from './styles.css'
 
 export function Layout({ children }: LayoutProps) {
   return (
-    <DSProvider>
+    <DSProvider theme='dark' className={sprinkles({
+      
+    })}>
       <Header>
         <Image
           src="logo-m.svg"

@@ -7,17 +7,18 @@ import { darkTheme, lightTheme } from "../styles/theme.css";
 export interface DSProviderProps {
   children: ReactNode;
   theme?: 'dark' | 'light';
+  className?: string
 }
 
-export function DSProvider({ children, theme = 'dark' }: DSProviderProps) {
+export function DSProvider({ children, className, theme = 'dark' }: DSProviderProps) {
   const themeClass = clsx({
     [darkTheme]: theme === 'dark',
     [lightTheme]: theme === 'light',
-  });
+  }, className);
 
   return (
-    <div id='app' className={themeClass}>
+    <section id='app' className={themeClass}>
       {children}
-    </div>
+    </section>
   )
 }

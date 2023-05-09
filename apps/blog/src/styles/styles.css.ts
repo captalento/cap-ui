@@ -1,7 +1,6 @@
 import { style } from '@vanilla-extract/css';
 
 export const sectionClass = style({
-  padding: `20px`,
   height: '200vh'
 })
 
