@@ -1,4 +1,4 @@
-import { Heading } from '@captalento/design-system';
+import { Heading, sprinkles,} from '@captalento/design-system';
 import { getPosts } from '../datalayer'
 import Card from '../components/Card';
 
@@ -8,8 +8,11 @@ export default function Blog({ posts }: any) {
   return (
     <section className={styles.sectionClass}>
 
-      <Heading size='md' color='green'>Blog</Heading>
-      
+      <Heading size='md' color='primary' className={sprinkles({
+        marginTop: 'largest',
+        marginBottom: 'large',
+        paddingX: 'medium' 
+      })}>Blog</Heading>      
       <section className={styles.cardsClass}>
         {posts.map((post: any) => (
           <Card key={post.sys.id} fields={post.fields} />
